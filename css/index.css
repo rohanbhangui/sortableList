@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat/Montserrat.eot');
+    src: url('../font/Montserrat/Montserrat.eot?#iefix') format('embedded-opentype'),
+         url('../font/Montserrat/Montserrat.ttf')  format('truetype'),
+         url('../font/Montserrat/Montserrat.svg#svgFontName') format('svg');
+}
+
+@font-face {
+    font-family: 'MontserratBold';
+    src: url('../font/MontserratBold/MontserratBold.eot');
+    src: url('../font/MontserratBold/MontserratBold.eot?#iefix') format('embedded-opentype'),
+         url('../font/MontserratBold/MontserratBold.ttf')  format('truetype'),
+         url('../font/MontserratBold/MontserratBold.svg#svgFontName') format('svg');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLight';
+    src: url('../font/HelveticaNeueLight/HelveticaNeueLight.eot');
+    src: url('../font/HelveticaNeueLight/HelveticaNeueLight.eot?#iefix') format('embedded-opentype'),
+         url('../font/HelveticaNeueLight/HelveticaNeueLight.ttf')  format('truetype'),
+         url('../font/HelveticaNeueLight/HelveticaNeueLight.svg#svgFontName') format('svg');
+
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../font/HelveticaNeue/HelveticaNeue.eot');
+    src: url('../font/HelveticaNeue/HelveticaNeue.eot?#iefix') format('embedded-opentype'),
+         url('../font/HelveticaNeue/HelveticaNeue.ttf')  format('truetype'),
+         url('../font/HelveticaNeue/HelveticaNeue.svg#svgFontName') format('svg');
+
+}
+
+* { 
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box; 
+}
+
+.table {
+    display: table;
+    font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    margin-top: 10px;
+    margin-left: 10px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -khtml-user-drag: element;
+    -webkit-user-drag: element;
+}
+
+.column {
+    display: table-cell;
+}
+
+.cell {
+    display: table-colgroup;
+    padding: 10px 15px;
+    min-width: 100px;
+    border: 1px solid #000;
+    border-right: none;
+    border-bottom: none;
+    cursor: default;
+    text-align: center;
+}
+
+.cell:not(.category) {
+    -webkit-text-stroke: 0.35px;
+}
+
+.column .cell:last-child {
+    border-bottom: 1px solid #000;
+}
+
+.column:last-child .cell {
+    border-right: 1px solid #000;
+}
+
+.column .cell:first-child {
+    cursor: move;
+}
+
+.category {
+    font-weight: bold;
+}
