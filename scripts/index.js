@@ -8,12 +8,15 @@ var users = [
   {id: 7, name:"Ikea Summer", age: 45}
 ];
 
+
+//generate the categories based on the first object in the array
 var categories = [];
 
 for(category in users[0]) {
   categories.push(category);
 }
 
+//create the table with the correct number of rows and columns (also create the category cells and label them)
 function tableCreate() {
 
   $(".table").html("");
@@ -37,6 +40,7 @@ function tableCreate() {
 
 }
 
+//to update the table when changes are made to the users array
 function tableUpdate() {
   for(var i = 0; i < users.length; i++) {
     for(var j = 0; j < categories.length; j++) {
@@ -45,18 +49,18 @@ function tableUpdate() {
   }
 }
 
+//updates made to the categories which is used for tableUpdate
 function categoryUpdate() {
   categories = [];
   $(".column .cell.category").each(function(index) {
     categories[index] = $(this).text();
   });
-  console.log(categories);
-  console.log("executed");
 }
 
+//a small sorting function for the osrting functionality onDblclick
 function sortByKey(array, key) {
     return array.sort(function(a, b) {
-        var x = a[key]; var y = b[key];
+        var x = b[key]; var y = a[key];
         return ((x < y) ? -1 : ((x > y) ? 1 : 0));
     });
 }
@@ -65,23 +69,30 @@ $(document).ready(function () {
   tableCreate();
   tableUpdate();
 
+
+  //jquery sortables stuff
   $(".table").sortable({
     axis: "x",
     cursor: "move",
-    cancel: ".column .cell:not(:first-child)",
-    activate: function(event, ui) {
-      //event.currentTarget.toElement = $(".row .cell:nth-child(" + ($(event.currentTarget.toElement).index() + 1) + ")");
-    }
+    cancel: ".column .cell:not(:first-child)"
   });
 
   $(".table").disableSelection();
 
-  console.log(users);
+  var oldSort = "id";
 
-  $(".cell.category").on("dblclick", function() {
+  $(".cell.category").on("click", function() {
     categoryUpdate();
-    users = sortByKey(users, $(this).text());
+
+    //determine if the same column that is being sorted as the previous column
+    if(oldSort != $(this).text()) {
+      users = sortByKey(users, $(this).text());
+    }
+
+    users = users.reverse();
+
     tableUpdate();
+    oldSort = $(this).text();
   });
 
 });
