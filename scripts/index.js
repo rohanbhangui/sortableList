@@ -1,11 +1,11 @@
 var users = [
-  {id: 1, name:"rohan", last: "bhangui", age: 18},
-  {id: 2, name:"karan", last: "bhangui", age: 23},
-  {id: 3, name:"greg", last: "methvin", age: 23},
-  {id: 4, name:"harvey", last: "multani", age: 26},
-  {id: 5, name:"safa", last: "tarik", age: 23},
-  {id: 6, name:"jack", last: "attack", age: 19},
-  {id: 7, name:"ikea", last: "summer", age: 45}
+  {id: 1, name:"Rohan Bhangui", age: 18},
+  {id: 2, name:"Karan Bhangui", age: 23},
+  {id: 3, name:"Greg Methvin", age: 23},
+  {id: 4, name:"Harvey Multani", age: 26},
+  {id: 5, name:"Safa Tarik", age: 23},
+  {id: 6, name:"Jack Attack", age: 19},
+  {id: 7, name:"Ikea Summer", age: 45}
 ];
 
 var categories = [];
@@ -43,8 +43,15 @@ function tableUpdate() {
       $(".column:nth-child(" + (j+1) + ") .cell:nth-child(" + (i+2) + ")").html(users[i][categories[j]]);
     }
   }
+}
 
-  console.log("table has been updated");
+function categoryUpdate() {
+  categories = [];
+  $(".column .cell.category").each(function(index) {
+    categories[index] = $(this).text();
+  });
+  console.log(categories);
+  console.log("executed");
 }
 
 function sortByKey(array, key) {
@@ -63,8 +70,6 @@ $(document).ready(function () {
     cursor: "move",
     cancel: ".column .cell:not(:first-child)",
     activate: function(event, ui) {
-      console.log(event);
-      console.log($(this));
       //event.currentTarget.toElement = $(".row .cell:nth-child(" + ($(event.currentTarget.toElement).index() + 1) + ")");
     }
   });
@@ -74,11 +79,9 @@ $(document).ready(function () {
   console.log(users);
 
   $(".cell.category").on("dblclick", function() {
+    categoryUpdate();
     users = sortByKey(users, $(this).text());
-
-    console.log(users);
-
     tableUpdate();
   });
-  
+
 });
