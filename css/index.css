@@ -76,6 +76,10 @@
     -webkit-text-stroke: 0.35px;
 }
 
+.cell.category {
+  font-weight: bolder;
+}
+
 .column .cell:last-child {
     border-bottom: 1px solid #000;
 }
