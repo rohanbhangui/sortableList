@@ -1,4 +1,4 @@
-/*var users = [
+var users = [
   {id: 1, name:"Rohan Bhangui", age: 18},
   {id: 2, name:"Karan Bhangui", age: 23},
   {id: 3, name:"Greg Methvin", age: 23},
@@ -6,12 +6,12 @@
   {id: 5, name:"Safa Tarik", age: 23},
   {id: 6, name:"Jack Attack", age: 19},
   {id: 7, name:"Ikea Summer", age: 45}
-];*/
+];
 
 var data = [
   {
     assets:"$101,686,744,000",
-    bankName:"Union Bank, National Association",
+    name:"Union Bank, National Association",
     address:"400 California Street",
     city:"San Francisco",
     state:"California",
@@ -23,7 +23,7 @@ var data = [
   },
   {
     assets:"$63,529,654,000",
-    bankName:"Bank of the West",
+    name:"Bank of the West",
     address:"180 Montgomery Street",
     city:"San Francisco",
     state:"California",
@@ -35,19 +35,19 @@ var data = [
   },
   {
     assets:"$37,312,741,000",
-    bankName:"First Republic Bank",
+    name:"First Republic Bank",
     address:"111 Pine Street",
     city:"San Francisco",
     state:"California",
     zip:94111,
     url:"www.firstrepublic.com",
     county:"San Francisco",
-    parent:" ",
+    parent:"\n",
     region:"San Francisco-Oakland-Hayward, CA"
   },
   {
     assets:"$27,175,000,000",
-    bankName:"Bank of America California, National Association",
+    name:"Bank of America California, National Association",
     address:"555 California Street",
     city:"San Francisco",
     state:"California",
@@ -59,7 +59,7 @@ var data = [
   },
   {
     assets:"$27,033,551,000",
-    bankName:"City National Bank",
+    name:"City National Bank",
     address:"400 North Roxbury Drive",
     city:"Beverly Hills",
     state:"California",
@@ -71,7 +71,7 @@ var data = [
   },
   {
     assets:"$25,421,057,000",
-    bankName:"OneWest Bank, FSB",
+    name:"OneWest Bank, FSB",
     address:"888 E. Walnut Street",
     city:"Pasadena",
     state:"California",
@@ -83,7 +83,7 @@ var data = [
   },
   {
     assets:"$23,300,217,000",
-    bankName:"East West Bank",
+    name:"East West Bank",
     address:"135 N. Los Robles Avenue, 7th Floor",
     city:"Pasadena",
     state:"California",
@@ -95,7 +95,7 @@ var data = [
   },
   {
     assets:"$20,872,490,000",
-    bankName:"Silicon Valley Bank",
+    name:"Silicon Valley Bank",
     address:"3003 Tasman Drive",
     city:"Santa Clara",
     state:"California",
@@ -107,7 +107,7 @@ var data = [
   },
   {
     assets:"$13,698,000,000",
-    bankName:"Rabobank, National Association",
+    name:"Rabobank, National Association",
     address:"915 Highland Pointe Drive, Suite 350",
     city:"Roseville",
     state:"California",
@@ -119,7 +119,7 @@ var data = [
   },
   {
     assets:"$10,839,704,000",
-    bankName:"California Bank & Trust",
+    name:"California Bank & Trust",
     address:"11622 El Camino Real, Suite 200",
     city:"San Diego",
     state:"California",
@@ -131,7 +131,7 @@ var data = [
   },
   {
     assets:"$10,589,063,000",
-    bankName:"Cathay Bank",
+    name:"Cathay Bank",
     address:"777 North Broadway Street",
     city:"Los Angeles",
     state:"California",
@@ -143,7 +143,7 @@ var data = [
   },
   {
     assets:"$9,981,372,000",
-    bankName:"JPMorgan Bank and Trust Company, National Association",
+    name:"JPMorgan Bank and Trust Company, National Association",
     address:"560 Mission Street",
     city:"San Francisco",
     state:"California",
@@ -155,7 +155,7 @@ var data = [
   },
   {
     assets:"$7,812,146,000",
-    bankName:"CapitalSource Bank",
+    name:"CapitalSource Bank",
     address:"633 West Fifth Street",
     city:"Los Angeles",
     state:"California",
@@ -167,7 +167,7 @@ var data = [
   },
   {
     assets:"$6,701,617,000",
-    bankName:"Pacific Western Bank",
+    name:"Pacific Western Bank",
     address:"10250 Constellation Boulevard",
     city:"Los Angeles",
     state:"California",
@@ -179,7 +179,7 @@ var data = [
   },
   {
     assets:"$6,421,094,000",
-    bankName:"Citizens Business Bank",
+    name:"Citizens Business Bank",
     address:"701 North Haven Avenue",
     city:"Ontario",
     state:"California",
@@ -191,7 +191,7 @@ var data = [
   },
   {
     assets:"$5,859,610,000",
-    bankName:"BBCN Bank",
+    name:"BBCN Bank",
     address:"3731 Wilshire Boulevard, Suite 1000",
     city:"Los Angeles",
     state:"California",
@@ -203,7 +203,7 @@ var data = [
   },
   {
     assets:"$5,146,143,000",
-    bankName:"Farmers and Merchants Bank of Long Beach",
+    name:"Farmers and Merchants Bank of Long Beach",
     address:"302 Pine Avenue",
     city:"Long Beach",
     state:"California",
@@ -215,7 +215,7 @@ var data = [
   },
   {
     assets:"$4,774,897,000",
-    bankName:"Westamerica Bank",
+    name:"Westamerica Bank",
     address:"1108 Fifth Avenue",
     city:"San Rafael",
     state:"California",
@@ -227,7 +227,7 @@ var data = [
   },
   {
     assets:"$3,599,223,000",
-    bankName:"Luther Burbank Savings",
+    name:"Luther Burbank Savings",
     address:"804 4th Street",
     city:"Santa Rosa",
     state:"California",
@@ -239,7 +239,7 @@ var data = [
   },
   {
     assets:"$3,252,421,000",
-    bankName:"Mechanics Bank",
+    name:"Mechanics Bank",
     address:"3170 Hilltop Mall Road",
     city:"Richmond",
     state:"California",
@@ -251,7 +251,7 @@ var data = [
   },
   {
     assets:"$3,190,074,000",
-    bankName:"Opus Bank",
+    name:"Opus Bank",
     address:"19900 Macarthur Blvd., 12th Floor",
     city:"Irvine",
     state:"California",
@@ -263,7 +263,7 @@ var data = [
   },
   {
     assets:"$3,172,519,000",
-    bankName:"Community Bank",
+    name:"Community Bank",
     address:"790 East Colorado Boulevard",
     city:"Pasadena",
     state:"California",
@@ -275,7 +275,7 @@ var data = [
   },
   {
     assets:"$3,088,864,000",
-    bankName:"Bofi Federal Bank",
+    name:"Bofi Federal Bank",
     address:"4350 La Jolla Village Drive, Suite 140",
     city:"San Diego",
     state:"California",
@@ -287,7 +287,7 @@ var data = [
   },
   {
     assets:"$2,782,400,000",
-    bankName:"Wilshire State Bank",
+    name:"Wilshire State Bank",
     address:"3200 Wilshire Boulevard",
     city:"Los Angeles",
     state:"California",
@@ -299,7 +299,7 @@ var data = [
   },
   {
     assets:"$2,768,560,000",
-    bankName:"Hanmi Bank",
+    name:"Hanmi Bank",
     address:"3660 Wilshire Boulevard, Suite A",
     city:"Los Angeles",
     state:"California",
@@ -311,7 +311,7 @@ var data = [
   },
   {
     assets:"$2,586,693,000",
-    bankName:"Tri Counties Bank",
+    name:"Tri Counties Bank",
     address:"63 Constitution Drive",
     city:"Chico",
     state:"California",
@@ -323,7 +323,7 @@ var data = [
   },
   {
     assets:"$2,489,968,000",
-    bankName:"Fremont Bank",
+    name:"Fremont Bank",
     address:"39150 Fremont Boulevard",
     city:"Fremont",
     state:"California",
@@ -335,7 +335,7 @@ var data = [
   },
   {
     assets:"$2,230,110,000",
-    bankName:"Manufacturers Bank",
+    name:"Manufacturers Bank",
     address:"515 South Figueroa Street",
     city:"Los Angeles",
     state:"California",
@@ -347,7 +347,7 @@ var data = [
   },
   {
     assets:"$2,124,106,000",
-    bankName:"Bank of Stockton",
+    name:"Bank of Stockton",
     address:"301 East Miner Avenue",
     city:"Stockton",
     state:"California",
@@ -359,7 +359,7 @@ var data = [
   },
   {
     assets:"$2,096,634,000",
-    bankName:"Pacific Trust Bank, FSB",
+    name:"Pacific Trust Bank, FSB",
     address:"18500 Von Karman Avenue",
     city:"Irvine",
     state:"California",
@@ -371,7 +371,7 @@ var data = [
   },
   {
     assets:"$2,031,757,000",
-    bankName:"Torrey Pines Bank",
+    name:"Torrey Pines Bank",
     address:"12220 El Camino Real, Suite 100",
     city:"San Diego",
     state:"California",
@@ -383,7 +383,7 @@ var data = [
   },
   {
     assets:"$2,006,279,000",
-    bankName:"Farmers & Merchants Bank of Central California",
+    name:"Farmers & Merchants Bank of Central California",
     address:"121 West Pine Street",
     city:"Lodi",
     state:"California",
@@ -395,7 +395,7 @@ var data = [
   },
   {
     assets:"$1,941,375,000",
-    bankName:"The Bank of New York Mellon Trust Company, National Association",
+    name:"The Bank of New York Mellon Trust Company, National Association",
     address:"400 South Hope Street",
     city:"Los Angeles",
     state:"California",
@@ -407,7 +407,7 @@ var data = [
   },
   {
     assets:"$1,812,107,000",
-    bankName:"El Dorado Savings Bank, F.S.B.",
+    name:"El Dorado Savings Bank, F.S.B.",
     address:"4040 El Dorado Road",
     city:"Placerville",
     state:"California",
@@ -419,7 +419,7 @@ var data = [
   },
   {
     assets:"$1,702,503,000",
-    bankName:"First American Trust, FSB",
+    name:"First American Trust, FSB",
     address:"5 First American Way, 3rd Floor",
     city:"Santa Ana",
     state:"California",
@@ -431,7 +431,7 @@ var data = [
   },
   {
     assets:"$1,688,193,000",
-    bankName:"Exchange Bank",
+    name:"Exchange Bank",
     address:"545 Fourth Street",
     city:"Santa Rosa",
     state:"California",
@@ -443,7 +443,7 @@ var data = [
   },
   {
     assets:"$1,657,402,000",
-    bankName:"Preferred Bank",
+    name:"Preferred Bank",
     address:"601 South Figueroa Street",
     city:"Los Angeles",
     state:"California",
@@ -455,7 +455,7 @@ var data = [
   },
   {
     assets:"$1,554,290,000",
-    bankName:"Pacific Premier Bank",
+    name:"Pacific Premier Bank",
     address:"17901 Von Karman Ave Suite 1200",
     city:"Irvine",
     state:"California",
@@ -467,7 +467,7 @@ var data = [
   },
   {
     assets:"$1,524,232,000",
-    bankName:"Chinatrust Bank (U.S.A.)",
+    name:"Chinatrust Bank (U.S.A.)",
     address:"801 South Figueroa Street, Suite 2300",
     city:"Los Angeles",
     state:"California",
@@ -479,7 +479,7 @@ var data = [
   },
   {
     assets:"$1,464,447,000",
-    bankName:"Bridge Bank, National Association",
+    name:"Bridge Bank, National Association",
     address:"55 Almaden Blvd",
     city:"San Jose",
     state:"California",
@@ -491,7 +491,7 @@ var data = [
   },
   {
     assets:"$1,428,466,000",
-    bankName:"Bank of Marin",
+    name:"Bank of Marin",
     address:"504 Redwood Boulevard",
     city:"Novato",
     state:"California",
@@ -503,7 +503,7 @@ var data = [
   },
   {
     assets:"$1,415,090,000",
-    bankName:"Banamex USA",
+    name:"Banamex USA",
     address:"2029 Century Park East, Suite 4200",
     city:"Century City",
     state:"California",
@@ -515,7 +515,7 @@ var data = [
   },
   {
     assets:"$1,397,042,000",
-    bankName:"Heritage Bank of Commerce",
+    name:"Heritage Bank of Commerce",
     address:"150 Almaden Boulevard",
     city:"San Jose",
     state:"California",
@@ -527,7 +527,7 @@ var data = [
   },
   {
     assets:"$1,375,355,000",
-    bankName:"Bank of the Sierra",
+    name:"Bank of the Sierra",
     address:"90 North Main Street",
     city:"Porterville",
     state:"California",
@@ -539,7 +539,7 @@ var data = [
   },
   {
     assets:"$1,300,123,000",
-    bankName:"American Business Bank",
+    name:"American Business Bank",
     address:"523 West 6th Street, Suite 900",
     city:"Los Angeles",
     state:"California",
@@ -551,7 +551,7 @@ var data = [
   },
   {
     assets:"$1,276,252,000",
-    bankName:"California United Bank",
+    name:"California United Bank",
     address:"15821 Ventura Boulevard, Suite 100",
     city:"Encino",
     state:"California",
@@ -563,7 +563,7 @@ var data = [
   },
   {
     assets:"$1,238,968,000",
-    bankName:"Mizrahi Tefahot Bank, Ltd.",
+    name:"Mizrahi Tefahot Bank, Ltd.",
     address:"800 Wilshire Boulevard, 14th Floor, Suite 1410",
     city:"Los Angeles",
     state:"California",
@@ -575,7 +575,7 @@ var data = [
   },
   {
     assets:"$1,238,176,000",
-    bankName:"Grandpoint Bank",
+    name:"Grandpoint Bank",
     address:"355 South Grand Avenue. Suite 2400",
     city:"Los Angeles",
     state:"California",
@@ -587,7 +587,7 @@ var data = [
   },
   {
     assets:"$1,210,981,000",
-    bankName:"Provident Savings Bank, F.S.B.",
+    name:"Provident Savings Bank, F.S.B.",
     address:"3756 Central Ave",
     city:"Riverside",
     state:"California",
@@ -599,7 +599,7 @@ var data = [
   },
   {
     assets:"$1,168,223,000",
-    bankName:"River City Bank",
+    name:"River City Bank",
     address:"2485 Natomas Park Drive",
     city:"Sacramento",
     state:"California",
@@ -611,7 +611,7 @@ var data = [
   },
   {
     assets:"$1,160,956,000",
-    bankName:"Far East National Bank",
+    name:"Far East National Bank",
     address:"977 N. Broadway",
     city:"Los Angeles",
     state:"California",
@@ -623,7 +623,7 @@ var data = [
   },
   {
     assets:"$1,095,022,000",
-    bankName:"Heritage Oaks Bank",
+    name:"Heritage Oaks Bank",
     address:"545 Twelfth Street",
     city:"Paso Robles",
     state:"California",
@@ -635,7 +635,7 @@ var data = [
   },
   {
     assets:"$1,073,139,000",
-    bankName:"Montecito Bank & Trust",
+    name:"Montecito Bank & Trust",
     address:"1000 State Street",
     city:"Santa Barbara",
     state:"California",
@@ -647,7 +647,7 @@ var data = [
   },
   {
     assets:"$952,647,000",
-    bankName:"Redding Bank of Commerce",
+    name:"Redding Bank of Commerce",
     address:"1951 Churn Creek Road",
     city:"Redding",
     state:"California",
@@ -659,7 +659,7 @@ var data = [
   },
   {
     assets:"$935,616,000",
-    bankName:"Pacific Mercantile Bank",
+    name:"Pacific Mercantile Bank",
     address:"949 South Coast Drive, 3rd. Floor",
     city:"Costa Mesa",
     state:"California",
@@ -671,7 +671,7 @@ var data = [
   },
   {
     assets:"$928,583,000",
-    bankName:"Savings Bank of Mendocino County",
+    name:"Savings Bank of Mendocino County",
     address:"200 North School Street",
     city:"Ukiah",
     state:"California",
@@ -683,7 +683,7 @@ var data = [
   },
   {
     assets:"$912,844,000",
-    bankName:"North Valley Bank",
+    name:"North Valley Bank",
     address:"1327 South Street",
     city:"Redding",
     state:"California",
@@ -695,7 +695,7 @@ var data = [
   },
   {
     assets:"$900,793,000",
-    bankName:"First National Bank of Northern California",
+    name:"First National Bank of Northern California",
     address:"6600 Mission Street",
     city:"Daly City",
     state:"California",
@@ -707,7 +707,7 @@ var data = [
   },
   {
     assets:"$890,846,000",
-    bankName:"First Foundation Bank",
+    name:"First Foundation Bank",
     address:"18101 Von Karman Avenue, Suite 750",
     city:"Irvine",
     state:"California",
@@ -719,7 +719,7 @@ var data = [
   },
   {
     assets:"$870,482,000",
-    bankName:"Central Valley Community Bank",
+    name:"Central Valley Community Bank",
     address:"7100 N. Financial Drive, Suite101",
     city:"Fresno",
     state:"California",
@@ -731,7 +731,7 @@ var data = [
   },
   {
     assets:"$868,268,000",
-    bankName:"Malaga Bank F.S.B.",
+    name:"Malaga Bank F.S.B.",
     address:"2514 Via Tejon",
     city:"Palos Verdes Peninsula",
     state:"California",
@@ -743,7 +743,7 @@ var data = [
   },
   {
     assets:"$867,335,000",
-    bankName:"Simplicity Bank",
+    name:"Simplicity Bank",
     address:"1359 N. Grand Avenue",
     city:"Covina",
     state:"California",
@@ -755,7 +755,7 @@ var data = [
   },
   {
     assets:"$844,664,000",
-    bankName:"First Northern Bank of Dixon",
+    name:"First Northern Bank of Dixon",
     address:"195 North First Street",
     city:"Dixon",
     state:"California",
@@ -767,7 +767,7 @@ var data = [
   },
   {
     assets:"$774,374,000",
-    bankName:"State Bank of India (California)",
+    name:"State Bank of India (California)",
     address:"707 Wilshire Boulevard, Suite 2900",
     city:"Los Angeles",
     state:"California",
@@ -779,7 +779,7 @@ var data = [
   },
   {
     assets:"$737,284,000",
-    bankName:"California Republic Bank",
+    name:"California Republic Bank",
     address:"18400 Von Karmen Ave, Ste 1100",
     city:"Irvine",
     state:"California",
@@ -791,7 +791,7 @@ var data = [
   },
   {
     assets:"$716,111,000",
-    bankName:"1st Enterprise Bank",
+    name:"1st Enterprise Bank",
     address:"818 West Seventh Street, Suite 220",
     city:"Los Angeles",
     state:"California",
@@ -803,7 +803,7 @@ var data = [
   },
   {
     assets:"$712,249,000",
-    bankName:"Royal Business Bank",
+    name:"Royal Business Bank",
     address:"660 S. Figueroa Street, Suite 1888",
     city:"Los Angeles",
     state:"California",
@@ -815,7 +815,7 @@ var data = [
   },
   {
     assets:"$680,841,000",
-    bankName:"Pacific City Bank",
+    name:"Pacific City Bank",
     address:"3701 Wilshire Boulevard, Suite 100",
     city:"Los Angeles",
     state:"California",
@@ -827,7 +827,7 @@ var data = [
   },
   {
     assets:"$679,833,000",
-    bankName:"Sunwest Bank",
+    name:"Sunwest Bank",
     address:"2050 Main Street",
     city:"Irvine",
     state:"California",
@@ -839,7 +839,7 @@ var data = [
   },
   {
     assets:"$678,317,000",
-    bankName:"First Community Bank",
+    name:"First Community Bank",
     address:"438 First Street",
     city:"Santa Rosa",
     state:"California",
@@ -851,7 +851,7 @@ var data = [
   },
   {
     assets:"$644,179,000",
-    bankName:"Oak Valley Community Bank",
+    name:"Oak Valley Community Bank",
     address:"125 North Third Avenue",
     city:"Oakdale",
     state:"California",
@@ -863,7 +863,7 @@ var data = [
   },
   {
     assets:"$642,660,000",
-    bankName:"Silvergate Bank",
+    name:"Silvergate Bank",
     address:"4275 Executive Square, Suite800",
     city:"La Jolla",
     state:"California",
@@ -875,7 +875,7 @@ var data = [
   },
   {
     assets:"$636,090,000",
-    bankName:"United Security Bank",
+    name:"United Security Bank",
     address:"2151 West Shaw Avenue",
     city:"Fresno",
     state:"California",
@@ -887,7 +887,7 @@ var data = [
   },
   {
     assets:"$613,199,000",
-    bankName:"Pacific Coast Bankers' Bank",
+    name:"Pacific Coast Bankers' Bank",
     address:"1676 N. California Blvd., Suite 300",
     city:"Walnut Creek",
     state:"California",
@@ -899,7 +899,7 @@ var data = [
   },
   {
     assets:"$587,550,000",
-    bankName:"REGENTS BANK, NATIONAL ASSOCIATION",
+    name:"REGENTS BANK, NATIONAL ASSOCIATION",
     address:"875 Prospect Street",
     city:"La Jolla",
     state:"California",
@@ -911,7 +911,7 @@ var data = [
   },
   {
     assets:"$578,032,000",
-    bankName:"American River Bank",
+    name:"American River Bank",
     address:"1545 River Park Drive",
     city:"Sacramento",
     state:"California",
@@ -923,7 +923,7 @@ var data = [
   },
   {
     assets:"$576,356,000",
-    bankName:"EverTrust Bank",
+    name:"EverTrust Bank",
     address:"2 North Lake Ave., Suite 1030",
     city:"Pasadena",
     state:"California",
@@ -935,7 +935,7 @@ var data = [
   },
   {
     assets:"$553,445,000",
-    bankName:"Premier Valley Bank",
+    name:"Premier Valley Bank",
     address:"255 East River Park Circle Suite 180",
     city:"Fresno",
     state:"California",
@@ -947,7 +947,7 @@ var data = [
   },
   {
     assets:"$548,246,000",
-    bankName:"Saehan Bank",
+    name:"Saehan Bank",
     address:"3580 Wilshire Boulevard, Suite 600",
     city:"Los Angeles",
     state:"California",
@@ -959,7 +959,7 @@ var data = [
   },
   {
     assets:"$540,886,000",
-    bankName:"Five Star Bank",
+    name:"Five Star Bank",
     address:"6810 Five Star Boulevard",
     city:"Rocklin",
     state:"California",
@@ -971,7 +971,7 @@ var data = [
   },
   {
     assets:"$539,472,000",
-    bankName:"Scott Valley Bank",
+    name:"Scott Valley Bank",
     address:"515 South Broadway",
     city:"Yreka",
     state:"California",
@@ -983,7 +983,7 @@ var data = [
   },
   {
     assets:"$532,785,000",
-    bankName:"Community West Bank, National Association",
+    name:"Community West Bank, National Association",
     address:"5827 Hollister Avenue",
     city:"Goleta",
     state:"California",
@@ -995,7 +995,7 @@ var data = [
   },
   {
     assets:"$519,679,000",
-    bankName:"Commonwealth Business Bank",
+    name:"Commonwealth Business Bank",
     address:"3534 Wilshire Boulevard. Suite 700",
     city:"Los Angeles",
     state:"California",
@@ -1007,7 +1007,7 @@ var data = [
   },
   {
     assets:"$512,200,000",
-    bankName:"First General Bank",
+    name:"First General Bank",
     address:"1744 South Nogales Street",
     city:"Rowland Heights",
     state:"California",
@@ -1019,7 +1019,7 @@ var data = [
   },
   {
     assets:"$496,032,000",
-    bankName:"Bank of Agriculture and Commerce",
+    name:"Bank of Agriculture and Commerce",
     address:"2021 West March Lane",
     city:"Stockton",
     state:"California",
@@ -1031,7 +1031,7 @@ var data = [
   },
   {
     assets:"$491,494,000",
-    bankName:"Plumas Bank",
+    name:"Plumas Bank",
     address:"336 West Main Street",
     city:"Quincy",
     state:"California",
@@ -1043,7 +1043,7 @@ var data = [
   },
   {
     assets:"$490,140,000",
-    bankName:"Security Bank of California",
+    name:"Security Bank of California",
     address:"3403 Tenth Street, Suite 100",
     city:"Riverside",
     state:"California",
@@ -1055,7 +1055,7 @@ var data = [
   },
   {
     assets:"$489,304,000",
-    bankName:"1st Century Bank,  National Association",
+    name:"1st Century Bank,  National Association",
     address:"1875 Century Park East, Suite 1400",
     city:"Los Angeles",
     state:"California",
@@ -1067,7 +1067,7 @@ var data = [
   },
   {
     assets:"$483,502,000",
-    bankName:"First Commercial Bank (USA)",
+    name:"First Commercial Bank (USA)",
     address:"200 East Main Street",
     city:"Alhambra",
     state:"California",
@@ -1079,7 +1079,7 @@ var data = [
   },
   {
     assets:"$481,240,000",
-    bankName:"Bank of Manhattan, N.A.",
+    name:"Bank of Manhattan, N.A.",
     address:"2141 Rosecrans Avenue, Suite 1160",
     city:"El Segundo",
     state:"California",
@@ -1091,7 +1091,7 @@ var data = [
   },
   {
     assets:"$466,477,000",
-    bankName:"Bank of the Orient",
+    name:"Bank of the Orient",
     address:"233 Sansome Street",
     city:"San Francisco",
     state:"California",
@@ -1103,7 +1103,7 @@ var data = [
   },
   {
     assets:"$466,231,000",
-    bankName:"Bank of Sacramento",
+    name:"Bank of Sacramento",
     address:"1750 Howe Avenue, Suite 100",
     city:"Sacramento",
     state:"California",
@@ -1115,7 +1115,7 @@ var data = [
   },
   {
     assets:"$464,547,000",
-    bankName:"California First National Bank",
+    name:"California First National Bank",
     address:"28 Executive Park",
     city:"Irvine",
     state:"California",
@@ -1127,7 +1127,7 @@ var data = [
   },
   {
     assets:"$463,926,000",
-    bankName:"Plaza Bank",
+    name:"Plaza Bank",
     address:"18200 Von Karman Avenue., Suite 500",
     city:"Irvine",
     state:"California",
@@ -1139,7 +1139,7 @@ var data = [
   },
   {
     assets:"$460,733,000",
-    bankName:"The Bank of Hemet",
+    name:"The Bank of Hemet",
     address:"3715 Sunnyside Drive",
     city:"Riverside",
     state:"California",
@@ -1151,7 +1151,7 @@ var data = [
   },
   {
     assets:"$456,824,000",
-    bankName:"Metro United Bank",
+    name:"Metro United Bank",
     address:"7320 Clairemont Mesa Boulevard",
     city:"San Diego",
     state:"California",
@@ -1163,7 +1163,7 @@ var data = [
   },
   {
     assets:"$444,938,000",
-    bankName:"Mission Community Bank",
+    name:"Mission Community Bank",
     address:"3380 S. Higuera Street",
     city:"San Luis Obispo",
     state:"California",
@@ -1175,7 +1175,7 @@ var data = [
   },
   {
     assets:"$439,961,000",
-    bankName:"The Private Bank of California",
+    name:"The Private Bank of California",
     address:"10100 Santa Monica Boulevard, Suite 2500",
     city:"Century City",
     state:"California",
@@ -1187,7 +1187,7 @@ var data = [
   },
   {
     assets:"$439,033,000",
-    bankName:"GBC International Bank",
+    name:"GBC International Bank",
     address:"5670 Wilshire Boulevard, Suite 1780",
     city:"Los Angeles",
     state:"California",
@@ -1199,7 +1199,7 @@ var data = [
   },
   {
     assets:"$433,186,000",
-    bankName:"Presidio Bank",
+    name:"Presidio Bank",
     address:"One Montgomery Tower",
     city:"San Francisco",
     state:"California",
@@ -1211,7 +1211,7 @@ var data = [
   },
   {
     assets:"$432,436,000",
-    bankName:"Avidbank",
+    name:"Avidbank",
     address:"400 Emerson Street",
     city:"Palo Alto",
     state:"California",
@@ -1223,7 +1223,7 @@ var data = [
   },
   {
     assets:"$432,067,000",
-    bankName:"Summit State Bank",
+    name:"Summit State Bank",
     address:"500 Bicentennial Way",
     city:"Santa Rosa",
     state:"California",
@@ -1235,7 +1235,7 @@ var data = [
   },
   {
     assets:"$418,435,000",
-    bankName:"American Security Bank",
+    name:"American Security Bank",
     address:"1401 Dove Street, Suite 100",
     city:"Newport Beach",
     state:"California",
@@ -1247,7 +1247,7 @@ var data = [
   },
   {
     assets:"$411,573,000",
-    bankName:"Wells Fargo Bank, Ltd.",
+    name:"Wells Fargo Bank, Ltd.",
     address:"707 Wilshire Boulevard",
     city:"Los Angeles",
     state:"California",
@@ -1259,7 +1259,7 @@ var data = [
   },
   {
     assets:"$400,904,000",
-    bankName:"TomatoBank, National Association",
+    name:"TomatoBank, National Association",
     address:"1420 East Valley Boulevard",
     city:"Alhambra",
     state:"California",
@@ -1271,7 +1271,7 @@ var data = [
   },
   {
     assets:"$381,152,000",
-    bankName:"Santa Cruz County Bank",
+    name:"Santa Cruz County Bank",
     address:"720 Front St",
     city:"Santa Cruz",
     state:"California",
@@ -1283,7 +1283,7 @@ var data = [
   },
   {
     assets:"$381,074,000",
-    bankName:"First Credit Bank",
+    name:"First Credit Bank",
     address:"9255 Sunset Boulevard",
     city:"Los Angeles",
     state:"California",
@@ -1295,7 +1295,7 @@ var data = [
   },
   {
     assets:"$369,528,000",
-    bankName:"1st Capital Bank",
+    name:"1st Capital Bank",
     address:"5 Harris Court, Building N, Suite #3",
     city:"Monterey",
     state:"California",
@@ -1307,7 +1307,7 @@ var data = [
   },
   {
     assets:"$369,209,000",
-    bankName:"Valley Republic Bank",
+    name:"Valley Republic Bank",
     address:"5000 California Avenue, Suite 110",
     city:"Bakersfield",
     state:"California",
@@ -1319,7 +1319,7 @@ var data = [
   },
   {
     assets:"$368,286,000",
-    bankName:"Valley Business Bank",
+    name:"Valley Business Bank",
     address:"701 West Main Street",
     city:"Visalia",
     state:"California",
@@ -1331,7 +1331,7 @@ var data = [
   },
   {
     assets:"$362,706,000",
-    bankName:"First Choice Bank",
+    name:"First Choice Bank",
     address:"17414 Carmenita Road",
     city:"Cerritos",
     state:"California",
@@ -1343,7 +1343,7 @@ var data = [
   },
   {
     assets:"$359,886,000",
-    bankName:"Mission Bank",
+    name:"Mission Bank",
     address:"1330 Truxtun Avenue",
     city:"Bakersfield",
     state:"California",
@@ -1355,7 +1355,7 @@ var data = [
   },
   {
     assets:"$349,232,000",
-    bankName:"California Bank of Commerce",
+    name:"California Bank of Commerce",
     address:"3595 Mt. Diablo Blvd., 2nd Floor",
     city:"Lafayette",
     state:"California",
@@ -1367,7 +1367,7 @@ var data = [
   },
   {
     assets:"$345,481,000",
-    bankName:"Broadway Federal Bank, f.s.b.",
+    name:"Broadway Federal Bank, f.s.b.",
     address:"4835 Venice Boulevard",
     city:"Los Angeles",
     state:"California",
@@ -1379,7 +1379,7 @@ var data = [
   },
   {
     assets:"$342,007,000",
-    bankName:"National Bank of California",
+    name:"National Bank of California",
     address:"12121 Wilshire Blvd 14th Fl",
     city:"Los Angeles",
     state:"California",
@@ -1391,7 +1391,7 @@ var data = [
   },
   {
     assets:"$338,752,000",
-    bankName:"Commerce West Bank",
+    name:"Commerce West Bank",
     address:"2111 Business Center Drive",
     city:"Irvine",
     state:"California",
@@ -1403,7 +1403,7 @@ var data = [
   },
   {
     assets:"$332,020,000",
-    bankName:"Universal Bank",
+    name:"Universal Bank",
     address:"3455 Nogales Street, Suite #105",
     city:"West Covina",
     state:"California",
@@ -1415,7 +1415,7 @@ var data = [
   },
   {
     assets:"$325,699,000",
-    bankName:"Bay Commercial Bank",
+    name:"Bay Commercial Bank",
     address:"500 Ygnacio Valley Road Suite 130",
     city:"Walnut Creek",
     state:"California",
@@ -1427,7 +1427,7 @@ var data = [
   },
   {
     assets:"$316,783,000",
-    bankName:"Pacific Enterprise Bank",
+    name:"Pacific Enterprise Bank",
     address:"17748 Sky Park Circle",
     city:"Irvine",
     state:"California",
@@ -1439,7 +1439,7 @@ var data = [
   },
   {
     assets:"$313,340,000",
-    bankName:"San Diego Private Bank",
+    name:"San Diego Private Bank",
     address:"801 Orange Avenue, Suite 101",
     city:"Coronado",
     state:"California",
@@ -1451,7 +1451,7 @@ var data = [
   },
   {
     assets:"$288,986,000",
-    bankName:"American Plus Bank, N.A.",
+    name:"American Plus Bank, N.A.",
     address:"630 West Duarte Road",
     city:"Arcadia",
     state:"California",
@@ -1463,7 +1463,7 @@ var data = [
   },
   {
     assets:"$279,694,000",
-    bankName:"One PacificCoast Bank, FSB",
+    name:"One PacificCoast Bank, FSB",
     address:"1438 Webster Street, Suite 100",
     city:"Oakland",
     state:"California",
@@ -1475,7 +1475,7 @@ var data = [
   },
   {
     assets:"$277,673,000",
-    bankName:"Independence Bank",
+    name:"Independence Bank",
     address:"4525 Macarthur Boulevard",
     city:"Newport Beach",
     state:"California",
@@ -1487,7 +1487,7 @@ var data = [
   },
   {
     assets:"$271,895,000",
-    bankName:"United Labor Bank, F.S.B.",
+    name:"United Labor Bank, F.S.B.",
     address:"100 Hegenberger Road, Suite 110",
     city:"Oakland",
     state:"California",
@@ -1499,7 +1499,7 @@ var data = [
   },
   {
     assets:"$270,084,000",
-    bankName:"Mega Bank",
+    name:"Mega Bank",
     address:"245 West Valley Boulevard",
     city:"San Gabriel",
     state:"California",
@@ -1511,7 +1511,7 @@ var data = [
   },
   {
     assets:"$264,161,000",
-    bankName:"Wedbush Bank",
+    name:"Wedbush Bank",
     address:"1000 Wilshire Boulevard, Suite 1150",
     city:"Los Angeles",
     state:"California",
@@ -1523,7 +1523,7 @@ var data = [
   },
   {
     assets:"$263,693,000",
-    bankName:"Bank of Alameda",
+    name:"Bank of Alameda",
     address:"2130 Otis Drive",
     city:"Alameda",
     state:"California",
@@ -1535,7 +1535,7 @@ var data = [
   },
   {
     assets:"$262,886,000",
-    bankName:"United American Bank",
+    name:"United American Bank",
     address:"101 South Ellsworth Avenue, Suite 110",
     city:"San Mateo",
     state:"California",
@@ -1547,7 +1547,7 @@ var data = [
   },
   {
     assets:"$260,671,000",
-    bankName:"Focus Business Bank",
+    name:"Focus Business Bank",
     address:"10 Almaden Boulevard, Suite 150",
     city:"San Jose",
     state:"California",
@@ -1559,7 +1559,7 @@ var data = [
   },
   {
     assets:"$255,363,000",
-    bankName:"Mission Valley Bank",
+    name:"Mission Valley Bank",
     address:"9116 Sunland Boulevard",
     city:"Sun Valley",
     state:"California",
@@ -1571,7 +1571,7 @@ var data = [
   },
   {
     assets:"$247,318,000",
-    bankName:"Seacoast Commerce Bank",
+    name:"Seacoast Commerce Bank",
     address:"11939 Rancho Bernardo Road, Suite 200",
     city:"San Diego",
     state:"California",
@@ -1583,7 +1583,7 @@ var data = [
   },
   {
     assets:"$247,306,000",
-    bankName:"Redwood Capital Bank",
+    name:"Redwood Capital Bank",
     address:"402 G Street",
     city:"Eureka",
     state:"California",
@@ -1595,7 +1595,7 @@ var data = [
   },
   {
     assets:"$246,050,000",
-    bankName:"Open Bank",
+    name:"Open Bank",
     address:"1000 Wilshire Boulevard, Suite 100",
     city:"Los Angeles",
     state:"California",
@@ -1607,7 +1607,7 @@ var data = [
   },
   {
     assets:"$245,796,000",
-    bankName:"Community Commerce Bank",
+    name:"Community Commerce Bank",
     address:"358 W Foothill Blvd",
     city:"Claremont",
     state:"California",
@@ -1619,7 +1619,7 @@ var data = [
   },
   {
     assets:"$235,610,000",
-    bankName:"Commerce National Bank",
+    name:"Commerce National Bank",
     address:"4040 Macarthur Boulevard, Suite 100",
     city:"Newport Beach",
     state:"California",
@@ -1631,7 +1631,7 @@ var data = [
   },
   {
     assets:"$234,049,000",
-    bankName:"Bank of Santa Clarita",
+    name:"Bank of Santa Clarita",
     address:"23780 Magic Mountain Parkway",
     city:"Santa Clarita",
     state:"California",
@@ -1643,7 +1643,7 @@ var data = [
   },
   {
     assets:"$225,484,000",
-    bankName:"AltaPacific Bank",
+    name:"AltaPacific Bank",
     address:"3725 Westwind Blvd, Suite 100",
     city:"Santa Rosa",
     state:"California",
@@ -1655,7 +1655,7 @@ var data = [
   },
   {
     assets:"$222,182,000",
-    bankName:"New OMNI Bank, National Association",
+    name:"New OMNI Bank, National Association",
     address:"1235 South Garfield Avenue",
     city:"Alhambra",
     state:"California",
@@ -1667,7 +1667,7 @@ var data = [
   },
   {
     assets:"$216,963,000",
-    bankName:"Gateway Bank, F.S.B.",
+    name:"Gateway Bank, F.S.B.",
     address:"919 Clement Street",
     city:"San Francisco",
     state:"California",
@@ -1679,7 +1679,7 @@ var data = [
   },
   {
     assets:"$214,916,000",
-    bankName:"Liberty Bank",
+    name:"Liberty Bank",
     address:"500 Linden Avenue",
     city:"South San Francisco",
     state:"California",
@@ -1691,7 +1691,7 @@ var data = [
   },
   {
     assets:"$212,499,000",
-    bankName:"Fresno First Bank",
+    name:"Fresno First Bank",
     address:"7690 N. Palm Avenue, Ste. 101",
     city:"Fresno",
     state:"California",
@@ -1703,7 +1703,7 @@ var data = [
   },
   {
     assets:"$210,520,000",
-    bankName:"Monterey County Bank",
+    name:"Monterey County Bank",
     address:"601 Munras Avenue",
     city:"Monterey",
     state:"California",
@@ -1715,7 +1715,7 @@ var data = [
   },
   {
     assets:"$203,442,000",
-    bankName:"Balboa Thrift and Loan Association",
+    name:"Balboa Thrift and Loan Association",
     address:"865 Amena Court",
     city:"Chula Vista",
     state:"California",
@@ -1727,7 +1727,7 @@ var data = [
   },
   {
     assets:"$202,998,000",
-    bankName:"Community 1st Bank",
+    name:"Community 1st Bank",
     address:"649 Lincoln Way",
     city:"Auburn",
     state:"California",
@@ -1739,7 +1739,7 @@ var data = [
   },
   {
     assets:"$202,921,000",
-    bankName:"County Commerce Bank",
+    name:"County Commerce Bank",
     address:"3260 Telegraph Road",
     city:"Ventura",
     state:"California",
@@ -1751,7 +1751,7 @@ var data = [
   },
   {
     assets:"$200,080,000",
-    bankName:"New Resource Bank",
+    name:"New Resource Bank",
     address:"405 Howard Street, Suite 110",
     city:"San Francisco",
     state:"California",
@@ -1763,7 +1763,7 @@ var data = [
   },
   {
     assets:"$195,393,000",
-    bankName:"Commercial Bank of California",
+    name:"Commercial Bank of California",
     address:"695 Town Center Drive, Suite 100",
     city:"Costa Mesa",
     state:"California",
@@ -1775,7 +1775,7 @@ var data = [
   },
   {
     assets:"$194,256,000",
-    bankName:"Pacific Valley Bank",
+    name:"Pacific Valley Bank",
     address:"422 Main Street",
     city:"Salinas",
     state:"California",
@@ -1787,7 +1787,7 @@ var data = [
   },
   {
     assets:"$193,784,000",
-    bankName:"EH National Bank",
+    name:"EH National Bank",
     address:"9701 Wilshire Boulevard",
     city:"Beverly Hills",
     state:"California",
@@ -1799,7 +1799,7 @@ var data = [
   },
   {
     assets:"$193,067,000",
-    bankName:"Bank of Southern California, N.A.",
+    name:"Bank of Southern California, N.A.",
     address:"12265 El Camino Real, Suite 100",
     city:"San Diego",
     state:"California",
@@ -1811,7 +1811,7 @@ var data = [
   },
   {
     assets:"$188,396,000",
-    bankName:"Orange County Business Bank",
+    name:"Orange County Business Bank",
     address:"17901 Von Karman Avenue, Suite 150",
     city:"Irvine",
     state:"California",
@@ -1823,7 +1823,7 @@ var data = [
   },
   {
     assets:"$188,337,000",
-    bankName:"The Merchants National Bank of Sacramento",
+    name:"The Merchants National Bank of Sacramento",
     address:"1015 Seventh Street",
     city:"Sacramento",
     state:"California",
@@ -1835,7 +1835,7 @@ var data = [
   },
   {
     assets:"$187,321,000",
-    bankName:"Summit Bank",
+    name:"Summit Bank",
     address:"2969 Broadway",
     city:"Oakland",
     state:"California",
@@ -1847,7 +1847,7 @@ var data = [
   },
   {
     assets:"$180,188,000",
-    bankName:"American Riviera Bank",
+    name:"American Riviera Bank",
     address:"1033 Anacapa Street",
     city:"Santa Barbara",
     state:"California",
@@ -1859,7 +1859,7 @@ var data = [
   },
   {
     assets:"$180,097,000",
-    bankName:"Mission National Bank",
+    name:"Mission National Bank",
     address:"3060 Sixteenth Street",
     city:"San Francisco",
     state:"California",
@@ -1871,7 +1871,7 @@ var data = [
   },
   {
     assets:"$178,615,000",
-    bankName:"Bank of Rio Vista",
+    name:"Bank of Rio Vista",
     address:"101 Main Street",
     city:"Rio Vista",
     state:"California",
@@ -1883,7 +1883,7 @@ var data = [
   },
   {
     assets:"$177,137,000",
-    bankName:"Pinnacle Bank",
+    name:"Pinnacle Bank",
     address:"18181 Butterfield Blvd., Ste 135",
     city:"Morgan Hill",
     state:"California",
@@ -1895,7 +1895,7 @@ var data = [
   },
   {
     assets:"$175,741,000",
-    bankName:"Community Bank of Santa Maria",
+    name:"Community Bank of Santa Maria",
     address:"1421 South Broadway",
     city:"Santa Maria",
     state:"California",
@@ -1907,7 +1907,7 @@ var data = [
   },
   {
     assets:"$172,676,000",
-    bankName:"First Federal Savings and Loan Association of San Rafael",
+    name:"First Federal Savings and Loan Association of San Rafael",
     address:"1030 Third St",
     city:"San Rafael",
     state:"California",
@@ -1919,7 +1919,7 @@ var data = [
   },
   {
     assets:"$171,236,000",
-    bankName:"Frontier Bank, FSB",
+    name:"Frontier Bank, FSB",
     address:"74175 El Paseo Drive",
     city:"Palm Desert",
     state:"California",
@@ -1931,7 +1931,7 @@ var data = [
   },
   {
     assets:"$170,458,000",
-    bankName:"Community Bank of the Bay",
+    name:"Community Bank of the Bay",
     address:"180 Grand Avenue",
     city:"Oakland",
     state:"California",
@@ -1943,7 +1943,7 @@ var data = [
   },
   {
     assets:"$163,020,000",
-    bankName:"Pacific Commerce Bank",
+    name:"Pacific Commerce Bank",
     address:"420 East 3rd Street, Suite 100",
     city:"Los Angeles",
     state:"California",
@@ -1955,7 +1955,7 @@ var data = [
   },
   {
     assets:"$160,089,000",
-    bankName:"Lighthouse Bank",
+    name:"Lighthouse Bank",
     address:"111 Mission Street",
     city:"Santa Cruz",
     state:"California",
@@ -1967,7 +1967,7 @@ var data = [
   },
   {
     assets:"$159,907,000",
-    bankName:"Uniti Bank",
+    name:"Uniti Bank",
     address:"6301 Beach Boulevard, Suite 100",
     city:"Buena Park",
     state:"California",
@@ -1979,7 +1979,7 @@ var data = [
   },
   {
     assets:"$157,946,000",
-    bankName:"The Bank of Santa Barbara",
+    name:"The Bank of Santa Barbara",
     address:"12 East Figueroa Street",
     city:"Santa Barbara",
     state:"California",
@@ -1991,7 +1991,7 @@ var data = [
   },
   {
     assets:"$157,884,000",
-    bankName:"ProAmerica Bank",
+    name:"ProAmerica Bank",
     address:"888 W 6th",
     city:"Los Angeles",
     state:"California",
@@ -2003,7 +2003,7 @@ var data = [
   },
   {
     assets:"$156,899,000",
-    bankName:"Capital Bank",
+    name:"Capital Bank",
     address:"31351 Rancho Viejo Road, Suite 101",
     city:"San Juan Capistrano",
     state:"California",
@@ -2015,7 +2015,7 @@ var data = [
   },
   {
     assets:"$155,498,000",
-    bankName:"Community Business Bank",
+    name:"Community Business Bank",
     address:"710 Riverpointe Ct",
     city:"West Sacramento",
     state:"California",
@@ -2027,7 +2027,7 @@ var data = [
   },
   {
     assets:"$154,798,000",
-    bankName:"Founders Community Bank",
+    name:"Founders Community Bank",
     address:"237 Higuera Street",
     city:"San Luis Obispo",
     state:"California",
@@ -2039,7 +2039,7 @@ var data = [
   },
   {
     assets:"$154,264,000",
-    bankName:"American Continental Bank",
+    name:"American Continental Bank",
     address:"17700 Castleton Street, Suite 100",
     city:"City Of Industry",
     state:"California",
@@ -2051,7 +2051,7 @@ var data = [
   },
   {
     assets:"$147,636,000",
-    bankName:"First National Bank of Southern California",
+    name:"First National Bank of Southern California",
     address:"3727 Arlington Avenue",
     city:"Riverside",
     state:"California",
@@ -2063,7 +2063,7 @@ var data = [
   },
   {
     assets:"$146,941,000",
-    bankName:"River Valley Community Bank",
+    name:"River Valley Community Bank",
     address:"1629 Colusa Highway",
     city:"Yuba City",
     state:"California",
@@ -2075,7 +2075,7 @@ var data = [
   },
   {
     assets:"$146,369,000",
-    bankName:"Ojai Community Bank",
+    name:"Ojai Community Bank",
     address:"402 West Ojai Avenue",
     city:"Ojai",
     state:"California",
@@ -2087,7 +2087,7 @@ var data = [
   },
   {
     assets:"$144,227,000",
-    bankName:"South County Bank, National Association",
+    name:"South County Bank, National Association",
     address:"22342 Avenida Empresa",
     city:"Rancho Santa Margarita",
     state:"California",
@@ -2099,7 +2099,7 @@ var data = [
   },
   {
     assets:"$143,587,000",
-    bankName:"Valley Community Bank",
+    name:"Valley Community Bank",
     address:"465 Main Street",
     city:"Pleasanton",
     state:"California",
@@ -2111,7 +2111,7 @@ var data = [
   },
   {
     assets:"$143,531,000",
-    bankName:"Bank of Napa, N.A.",
+    name:"Bank of Napa, N.A.",
     address:"2007 Redwood Road, Suite 101",
     city:"Napa",
     state:"California",
@@ -2123,7 +2123,7 @@ var data = [
   },
   {
     assets:"$139,799,000",
-    bankName:"Northern California National Bank",
+    name:"Northern California National Bank",
     address:"1717 Mangrove Avenue, Suite 100",
     city:"Chico",
     state:"California",
@@ -2135,7 +2135,7 @@ var data = [
   },
   {
     assets:"$137,522,000",
-    bankName:"International City Bank, National Association",
+    name:"International City Bank, National Association",
     address:"249 E Ocean Boulevard",
     city:"Long Beach",
     state:"California",
@@ -2147,7 +2147,7 @@ var data = [
   },
   {
     assets:"$137,162,000",
-    bankName:"First Mountain Bank",
+    name:"First Mountain Bank",
     address:"40865 Big Bear Boulevard",
     city:"Big Bear Lake",
     state:"California",
@@ -2159,7 +2159,7 @@ var data = [
   },
   {
     assets:"$136,650,000",
-    bankName:"Golden Valley Bank",
+    name:"Golden Valley Bank",
     address:"190 Cohasset Road, Suite 170",
     city:"Chico",
     state:"California",
@@ -2171,7 +2171,7 @@ var data = [
   },
   {
     assets:"$136,332,000",
-    bankName:"Bank of San Francisco",
+    name:"Bank of San Francisco",
     address:"575 Market Street, Suite 900",
     city:"San Francisco",
     state:"California",
@@ -2183,7 +2183,7 @@ var data = [
   },
   {
     assets:"$135,883,000",
-    bankName:"Golden Pacific Bank, National Association",
+    name:"Golden Pacific Bank, National Association",
     address:"519 \"d\" Street",
     city:"Marysville",
     state:"California",
@@ -2195,7 +2195,7 @@ var data = [
   },
   {
     assets:"$134,392,000",
-    bankName:"Folsom Lake Bank",
+    name:"Folsom Lake Bank",
     address:"905 Sutter Street, Suite 100",
     city:"Folsom",
     state:"California",
@@ -2207,7 +2207,7 @@ var data = [
   },
   {
     assets:"$133,802,000",
-    bankName:"Premier Business Bank",
+    name:"Premier Business Bank",
     address:"700 South Flower Street, Suite 2000",
     city:"Los Angeles",
     state:"California",
@@ -2219,7 +2219,7 @@ var data = [
   },
   {
     assets:"$133,758,000",
-    bankName:"Santa Clara Valley Bank, National Association",
+    name:"Santa Clara Valley Bank, National Association",
     address:"901 East Main Street",
     city:"Santa Paula",
     state:"California",
@@ -2231,7 +2231,7 @@ var data = [
   },
   {
     assets:"$133,441,000",
-    bankName:"Murphy Bank",
+    name:"Murphy Bank",
     address:"5180 North Palm Avenue",
     city:"Fresno",
     state:"California",
@@ -2243,7 +2243,7 @@ var data = [
   },
   {
     assets:"$129,526,000",
-    bankName:"Finance and Thrift Company",
+    name:"Finance and Thrift Company",
     address:"268 North Main Street",
     city:"Porterville",
     state:"California",
@@ -2255,7 +2255,7 @@ var data = [
   },
   {
     assets:"$129,002,000",
-    bankName:"Premier Service Bank",
+    name:"Premier Service Bank",
     address:"3637 Arlington Avenue, Suite B",
     city:"Riverside",
     state:"California",
@@ -2267,7 +2267,7 @@ var data = [
   },
   {
     assets:"$128,049,000",
-    bankName:"Metropolitan Bank",
+    name:"Metropolitan Bank",
     address:"250 East 18th Street",
     city:"Oakland",
     state:"California",
@@ -2279,7 +2279,7 @@ var data = [
   },
   {
     assets:"$127,615,000",
-    bankName:"America California Bank",
+    name:"America California Bank",
     address:"417 Montgomery Street",
     city:"San Francisco",
     state:"California",
@@ -2291,7 +2291,7 @@ var data = [
   },
   {
     assets:"$127,584,000",
-    bankName:"Pacific Alliance Bank",
+    name:"Pacific Alliance Bank",
     address:"8400 East Valley Boulevard",
     city:"Rosemead",
     state:"California",
@@ -2303,7 +2303,7 @@ var data = [
   },
   {
     assets:"$125,935,000",
-    bankName:"Vibra Bank",
+    name:"Vibra Bank",
     address:"530 Broadway",
     city:"Chula Vista",
     state:"California",
@@ -2315,7 +2315,7 @@ var data = [
   },
   {
     assets:"$125,189,000",
-    bankName:"Trans-Pacific National Bank",
+    name:"Trans-Pacific National Bank",
     address:"55 Second Street",
     city:"San Francisco",
     state:"California",
@@ -2327,7 +2327,7 @@ var data = [
   },
   {
     assets:"$124,986,000",
-    bankName:"Eastern International Bank",
+    name:"Eastern International Bank",
     address:"688 New High Street",
     city:"Los Angeles",
     state:"California",
@@ -2339,7 +2339,7 @@ var data = [
   },
   {
     assets:"$123,715,000",
-    bankName:"Community Bank of San Joaquin",
+    name:"Community Bank of San Joaquin",
     address:"22 West Yokuts Avenue",
     city:"Stockton",
     state:"California",
@@ -2351,7 +2351,7 @@ var data = [
   },
   {
     assets:"$121,838,000",
-    bankName:"Partners Bank of California",
+    name:"Partners Bank of California",
     address:"27201 Puerta Real, Suite 160",
     city:"Mission Viejo",
     state:"California",
@@ -2363,7 +2363,7 @@ var data = [
   },
   {
     assets:"$119,686,000",
-    bankName:"Americas United Bank",
+    name:"Americas United Bank",
     address:"801 North Brand Boulevard, Suite #1150",
     city:"Glendale",
     state:"California",
@@ -2375,7 +2375,7 @@ var data = [
   },
   {
     assets:"$118,279,000",
-    bankName:"Cornerstone Community Bank",
+    name:"Cornerstone Community Bank",
     address:"237 South Main Street",
     city:"Red Bluff",
     state:"California",
@@ -2387,7 +2387,7 @@ var data = [
   },
   {
     assets:"$117,437,000",
-    bankName:"Coast National Bank",
+    name:"Coast National Bank",
     address:"500 Marsh Street",
     city:"San Luis Obispo",
     state:"California",
@@ -2399,7 +2399,7 @@ var data = [
   },
   {
     assets:"$116,993,000",
-    bankName:"Chino Commercial Bank, N.A.",
+    name:"Chino Commercial Bank, N.A.",
     address:"14245 Pipeline Avenue",
     city:"Chino",
     state:"California",
@@ -2411,7 +2411,7 @@ var data = [
   },
   {
     assets:"$112,886,000",
-    bankName:"United Pacific Bank",
+    name:"United Pacific Bank",
     address:"1630 South Azusa Avenue",
     city:"City Of Industry",
     state:"California",
@@ -2423,7 +2423,7 @@ var data = [
   },
   {
     assets:"$110,423,000",
-    bankName:"Suncrest Bank",
+    name:"Suncrest Bank",
     address:"400 West Center Avenue",
     city:"Visalia",
     state:"California",
@@ -2435,7 +2435,7 @@ var data = [
   },
   {
     assets:"$108,932,000",
-    bankName:"California Pacific Bank",
+    name:"California Pacific Bank",
     address:"250 Montgomery Street, 5th Floor",
     city:"San Francisco",
     state:"California",
@@ -2447,7 +2447,7 @@ var data = [
   },
   {
     assets:"$106,298,000",
-    bankName:"Pan Pacific Bank",
+    name:"Pan Pacific Bank",
     address:"47065 Warm Springs Boulevard",
     city:"Fremont",
     state:"California",
@@ -2459,7 +2459,7 @@ var data = [
   },
   {
     assets:"$105,130,000",
-    bankName:"Home Bank of California",
+    name:"Home Bank of California",
     address:"4493 Ruffin Road",
     city:"San Diego",
     state:"California",
@@ -2471,7 +2471,7 @@ var data = [
   },
   {
     assets:"$104,449,000",
-    bankName:"Community Valley Bank",
+    name:"Community Valley Bank",
     address:"1443 Main Street",
     city:"El Centro",
     state:"California",
@@ -2483,7 +2483,7 @@ var data = [
   },
   {
     assets:"$102,899,000",
-    bankName:"First Security Business Bank",
+    name:"First Security Business Bank",
     address:"803 East Katella Avenue",
     city:"Orange",
     state:"California",
@@ -2495,7 +2495,7 @@ var data = [
   },
   {
     assets:"$99,691,000",
-    bankName:"Friendly Hills Bank",
+    name:"Friendly Hills Bank",
     address:"16011 E. Whittier Boulevard",
     city:"Whittier",
     state:"California",
@@ -2507,7 +2507,7 @@ var data = [
   },
   {
     assets:"$99,314,000",
-    bankName:"Mission Oaks National Bank",
+    name:"Mission Oaks National Bank",
     address:"41530 Enterprise Circle South, Suite 100",
     city:"Temecula",
     state:"California",
@@ -2519,7 +2519,7 @@ var data = [
   },
   {
     assets:"$96,518,000",
-    bankName:"Neighborhood National Bank",
+    name:"Neighborhood National Bank",
     address:"3511 National Avenue",
     city:"San Diego",
     state:"California",
@@ -2531,7 +2531,7 @@ var data = [
   },
   {
     assets:"$95,838,000",
-    bankName:"Tri-Valley Bank",
+    name:"Tri-Valley Bank",
     address:"2404 San Ramon Valley Boulevard, Suite 100",
     city:"San Ramon",
     state:"California",
@@ -2543,7 +2543,7 @@ var data = [
   },
   {
     assets:"$94,391,000",
-    bankName:"Delta Bank, National Association",
+    name:"Delta Bank, National Association",
     address:"611 North Main Street",
     city:"Manteca",
     state:"California",
@@ -2555,7 +2555,7 @@ var data = [
   },
   {
     assets:"$91,689,000",
-    bankName:"Merchants Bank of California, National Association",
+    name:"Merchants Bank of California, National Association",
     address:"One Civic Plaza, Suite 100",
     city:"Carson",
     state:"California",
@@ -2567,7 +2567,7 @@ var data = [
   },
   {
     assets:"$89,834,000",
-    bankName:"Security First Bank",
+    name:"Security First Bank",
     address:"663 W Nees Avenue",
     city:"Fresno",
     state:"California",
@@ -2579,7 +2579,7 @@ var data = [
   },
   {
     assets:"$87,954,000",
-    bankName:"Sierra Vista Bank",
+    name:"Sierra Vista Bank",
     address:"1710 Prairie City Road",
     city:"Folsom",
     state:"California",
@@ -2591,7 +2591,7 @@ var data = [
   },
   {
     assets:"$81,386,000",
-    bankName:"Golden State Bank",
+    name:"Golden State Bank",
     address:"1060 West Foothill Boulevard",
     city:"Upland",
     state:"California",
@@ -2603,7 +2603,7 @@ var data = [
   },
   {
     assets:"$81,294,000",
-    bankName:"US Metro Bank",
+    name:"US Metro Bank",
     address:"9866 Garden Grove Boulevard",
     city:"Garden Grove",
     state:"California",
@@ -2615,7 +2615,7 @@ var data = [
   },
   {
     assets:"$76,940,000",
-    bankName:"Capital Bank and Trust Company",
+    name:"Capital Bank and Trust Company",
     address:"6455 Irvine Center Drive",
     city:"Irvine",
     state:"California",
@@ -2627,7 +2627,7 @@ var data = [
   },
   {
     assets:"$66,607,000",
-    bankName:"Sutter Community Bank",
+    name:"Sutter Community Bank",
     address:"700 Plumas Street",
     city:"Yuba City",
     state:"California",
@@ -2639,7 +2639,7 @@ var data = [
   },
   {
     assets:"$63,776,000",
-    bankName:"Mother Lode Bank",
+    name:"Mother Lode Bank",
     address:"172 West Stockton Road",
     city:"Sonora",
     state:"California",
@@ -2651,7 +2651,7 @@ var data = [
   },
   {
     assets:"$61,189,000",
-    bankName:"Bank of Feather River",
+    name:"Bank of Feather River",
     address:"855 Harter Parkway, Suite 100",
     city:"Yuba City",
     state:"California",
@@ -2663,7 +2663,7 @@ var data = [
   },
   {
     assets:"$60,843,000",
-    bankName:"Tustin Community Bank",
+    name:"Tustin Community Bank",
     address:"13891 Newport Avenue, Suites 100 & 130",
     city:"Tustin",
     state:"California",
@@ -2675,7 +2675,7 @@ var data = [
   },
   {
     assets:"$56,066,000",
-    bankName:"Bank of Whittier, National Association",
+    name:"Bank of Whittier, National Association",
     address:"15141 East Whittier Boulevard",
     city:"Whittier",
     state:"California",
@@ -2687,7 +2687,7 @@ var data = [
   },
   {
     assets:"$53,846,000",
-    bankName:"Asian Pacific National Bank",
+    name:"Asian Pacific National Bank",
     address:"333 West Valley Boulevard",
     city:"San Gabriel",
     state:"California",
@@ -2699,7 +2699,7 @@ var data = [
   },
   {
     assets:"$51,211,000",
-    bankName:"Saigon National Bank",
+    name:"Saigon National Bank",
     address:"15606 Brookhurst St, Suite C",
     city:"Westminster",
     state:"California",
@@ -2711,7 +2711,7 @@ var data = [
   },
   {
     assets:"$50,346,000",
-    bankName:"Commerce Bank of Temecula Valley",
+    name:"Commerce Bank of Temecula Valley",
     address:"25220 Hancock Avenue, Suite #140",
     city:"Murrieta",
     state:"California",
@@ -2723,7 +2723,7 @@ var data = [
   },
   {
     assets:"$46,116,000",
-    bankName:"California Business Bank",
+    name:"California Business Bank",
     address:"800 West Sixth Street, Suite 1000",
     city:"Los Angeles",
     state:"California",
@@ -2735,7 +2735,7 @@ var data = [
   },
   {
     assets:"$38,402,000",
-    bankName:"Pan American Bank",
+    name:"Pan American Bank",
     address:"3626 East First Street",
     city:"Los Angeles",
     state:"California",
@@ -2747,7 +2747,7 @@ var data = [
   },
   {
     assets:"$27,566,000",
-    bankName:"Rancho Santa Fe Thrift & Loan Association",
+    name:"Rancho Santa Fe Thrift & Loan Association",
     address:"1001 West San Marcos Boulevard, #140",
     city:"San Marcos",
     state:"California",
@@ -2759,7 +2759,7 @@ var data = [
   },
   {
     assets:"$19,161,000",
-    bankName:"Armed Forces Bank of California, National Association",
+    name:"Armed Forces Bank of California, National Association",
     address:"2260 Callagan Highway, Building 3187a, Suite 1",
     city:"San Diego",
     state:"California",
@@ -2771,9 +2771,134 @@ var data = [
   }
 ];
 
-$(document).ready(function () {
-  $("section.content").html("");
-  $.each(users, function(index, value) {
-    $("section.content").append("<div class=\"project\"><a href=\"#\"><div class=\"overlay\"><div class=\"text\"><em><h3>" + value.name + "</h3></em><p class=\"content\"><em>age: </em>" + value.age + "<br><em>id: </em>" + value.id + "</p></div></div></a></div>");
+
+//generate the categories based on the first object in the array
+var categories = [];
+
+
+//used to quickly change array set
+var dataArr = data;
+
+for(category in dataArr[0]) {
+  categories.push(category);
+}
+
+//create the table with the correct number of rows and columns (also create the category cells and label them)
+function tableCreate() {
+
+  $(".table").html("");
+
+  for(var i = 0; i < categories.length; i++) {
+    $(".table").append("<div class=\"column\"></div>");
+  }
+
+  for(var i = 0; i <= dataArr.length; i++) {
+    if(i == 0) {
+      $(".column").append("<div class=\"cell category\"></div>");
+    }
+    else {
+      $(".column").append("<div class=\"cell\"></div>");
+    }
+  }
+
+  $(".column").each(function(index) {
+    $(this).children(".cell:nth-child(1)").html(categories[index]);
   });
+
+}
+
+//to update the table when changes are made to the dataArr array
+function tableUpdate() {
+  for(var i = 0; i < dataArr.length; i++) {
+    for(var j = 0; j < categories.length; j++) {
+      $(".column:nth-child(" + (j+1) + ") .cell:nth-child(" + (i+2) + ")").html(dataArr[i][categories[j]]);
+    }
+  }
+}
+
+//updates made to the categories which is used for tableUpdate
+function categoryUpdate() {
+  categories = [];
+  $(".column .cell.category").each(function(index) {
+    categories[index] = $(this).text();
+  });
+}
+
+//a small sorting function for the osrting functionality onDblclick
+function sortByKey(array, key) {
+    return array.sort(function(a, b) {
+        var x = b[key]; var y = a[key];
+        return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+    });
+}
+
+$(document).ready(function () {
+  tableCreate();
+  tableUpdate();
+
+
+  //jquery sortables stuff
+  $(".table").sortable({
+    axis: "x",
+    cursor: "move",
+    cancel: ".column .cell:not(:first-child)",
+    start: function(event, ui) {
+      $(".table").css({
+        "margin-left": "100px",
+        "margin-right": "100px"
+      });
+    },
+    stop: function(event, ui) {
+      $(".table").css({
+        "margin-left": "10px",
+        "margin-right": "10px"
+      });
+    }
+  });
+
+  $(".table").disableSelection();
+
+  var oldSort = "id";
+
+  $(".cell.category").on("dblclick", function() {
+    categoryUpdate();
+
+    //determine if the same column that is being sorted as the previous column
+    if(oldSort != $(this).text()) {
+      dataArr = sortByKey(dataArr, $(this).text());
+    }
+
+    dataArr = dataArr.reverse();
+
+    tableUpdate();
+    oldSort = $(this).text();
+  });
+
+  //for creating "sticky" headers
+  $(window).on("scroll load", function() {
+    if($(window).scrollTop() >= 60)
+    {
+      $(".category").css({
+        "position": "relative",
+        "top": (($(window).scrollTop() - 10) + "px"),
+        "border-left": "1px solid #000",
+        "border-top": "none",
+        "border-bottom": "1px solid #000",
+        "border-right": "none",
+        "z-index": "100",
+        "background": "#fff"
+      });
+    }
+    else
+    {
+      $(".category").css({
+        "position": "static",
+        "border-left": "1px solid #000",
+        "border-top": "1px solid #000",
+        "border-bottom": "none",
+        "border-right": "none"
+      });
+    }
+  });
+
 });
