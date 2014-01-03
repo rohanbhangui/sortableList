@@ -2782,10 +2782,19 @@ var categories = [];
 var dataArr = data;
 
 for(category in dataArr[0]) {
-  if((category + "") != "parent")
-  {
     categories.push(category);
-  }
+}
+
+//to check if dataArr contains an entry already
+function checkArray(array, string) {
+    for(var i = 0; i < array.length; i++) {
+        if(array[i]["name"] == string) {
+            return false;
+            break;
+        }
+    }
+
+    return true;
 }
 
 //create the table with the correct number of rows and columns (also create the category cells and label them)
@@ -2797,7 +2806,13 @@ function tableCreate() {
     $(".table").append("<div class=\"column\"></div>");
   }
 
-  for(var i = 0; i <= dataArr.length; i++) {
+  for(var i=0; i < dataArr.length-1; i++) {
+    if((dataArr[i]["parent"] != " " || dataArr[i]["parent"] != " ") && checkArray(dataArr, dataArr[i]["parent"]) ) {
+        dataArr.splice(i, 0, {name:dataArr[i]["parent"], assets:"", address:"", city:"", state:"", zip:"", url:"", county:"", parent:"", region:""});
+    }
+  }
+
+  for(var i = 0; i < dataArr.length; i++) {
     if(i == 0) {
       $(".column").append("<div class=\"cell category\"></div>");
     }
@@ -2829,7 +2844,7 @@ function categoryUpdate() {
   });
 }
 
-//a small sorting function for the osrting functionality onDblclick
+//a small sorting function for the sorting functionality onDblclick
 function sortByKey(array, key) {
     return array.sort(function(a, b) {
         var x = b[key]; var y = a[key];
@@ -2846,6 +2861,7 @@ $(document).ready(function () {
   $(".table").sortable({
     axis: "x",
     cursor: "move",
+    scroll: "false",
     refreshPositions: true, 
     cancel: ".column .cell:not(:first-child)",
     forcePlaceholderSize: true,
