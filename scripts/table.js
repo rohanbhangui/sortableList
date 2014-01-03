@@ -1,13 +1,3 @@
-/*var users = [
-  {id: 1, name:"Rohan Bhangui", age: 18},
-  {id: 2, name:"Karan Bhangui", age: 23},
-  {id: 3, name:"Greg Methvin", age: 23},
-  {id: 4, name:"Harvey Multani", age: 26},
-  {id: 5, name:"Safa Tarik", age: 23},
-  {id: 6, name:"Jack Attack", age: 19},
-  {id: 7, name:"Ikea Summer", age: 45}
-];*/
-
 var data = [
   {
     name:"Union Bank, National Association",
@@ -2772,6 +2762,18 @@ var data = [
 ];
 
 
+var users = [
+  {id: 1, name:"Rohan Bhangui", age: 18},
+  {id: 2, name:"Karan Bhangui", age: 23},
+  {id: 3, name:"Greg Methvin", age: 23},
+  {id: 4, name:"Harvey Multani", age: 26},
+  {id: 5, name:"Safa Tarik", age: 23},
+  {id: 6, name:"Jack Attack", age: 19},
+  {id: 7, name:"Ikea Summer", age: 45}
+];
+
+
+
 //generate the categories based on the first object in the array
 var categories = [];
 
@@ -2844,24 +2846,15 @@ $(document).ready(function () {
   $(".table").sortable({
     axis: "x",
     cursor: "move",
+    refreshPositions: true, 
     cancel: ".column .cell:not(:first-child)",
     forcePlaceholderSize: true,
-    /*,
-    start: function(event, ui) {
-      $(".table").css({
-        "margin-left": "100px",
-        "margin-right": "100px"
-      });
+    placeholder: "red",
+    start: function(e, ui){
+        ui.placeholder.width(ui.item.width());
+        ui.placeholder.height(ui.item.height());
     },
-    stop: function(event, ui) {
-      $(".table").css({
-        "margin-left": "10px",
-        "margin-right": "10px"
-      });
-    }*/
-  });
-
-  $(".table").disableSelection();
+  }).disableSelection();
 
   var oldSort = "id";
 

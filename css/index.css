@@ -48,6 +48,7 @@ a {
 }
 
 .table {
+    width: 100%;
     display: table;
     font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
     font-size: 1em;
@@ -62,7 +63,8 @@ a {
 }
 
 .column {
-    display: table-cell;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .cell {
@@ -75,7 +77,6 @@ a {
     border-bottom: none;
     cursor: default;
     text-align: center;
-    overflow: hidden;
 }
 
 .cell:not(.category) {
@@ -104,6 +105,12 @@ a {
     -webkit-transition: top ease-in-out 0.3s;
     -o-transition: top ease-in-out 0.3s;
     transition: top ease-in-out 0.3s;
+}
+
+.red {
+  background: #ff0000;
+  display: inline-block;
+  vertical-align: top;
 }
 
 
