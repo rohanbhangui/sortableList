@@ -32,7 +32,7 @@ var data = [
     zip:94111,
     url:"www.firstrepublic.com",
     county:"San Francisco",
-    parent:"\n",
+    parent:"",
     region:"San Francisco-Oakland-Hayward, CA"
   },
   {
